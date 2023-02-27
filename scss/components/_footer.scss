@@ -1,0 +1,21 @@
+// footer
+footer {
+  position: fixed;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: $cl-Moderateviolet;
+  color: $cl-Lightgrayishblue;
+  padding: 0.2rem 0.3rem;
+  font-size: 11px;
+  text-align: center;
+  border-radius: $radius-2 $radius-2 0 0;
+}
+.attribution a {
+  font-weight: bold;
+  color: $cl-White;
+  transition: $transition;
+  &:hover {
+    color: darken($cl-White, 20);
+  }
+}

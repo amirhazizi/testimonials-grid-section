@@ -1,0 +1,31 @@
+// import variables
+@import "./variables";
+// fonts
+// import fonts
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+// reset style
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+}
+a,
+button {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+ul {
+  list-style-type: none;
+}
+// global style
+html {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+}
