@@ -108,7 +108,8 @@ main {
 }
 
 .article-1 {
-  background: hsl(263, 55%, 52%);
+  background: url("../images/bg-pattern-quotation.svg") top right 10%/30% no-repeat;
+  background-color: hsl(263, 55%, 52%);
 }
 
 .article-2 {
@@ -160,6 +161,8 @@ main {
   }
   .article-1 {
     grid-area: a;
+    background-size: 20%;
+    background-position: top right 20%;
   }
   .article-2 {
     grid-area: b;
