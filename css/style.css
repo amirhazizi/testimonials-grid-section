@@ -52,15 +52,18 @@ footer {
 
 body {
   background-color: hsl(210, 46%, 95%);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
 }
 
 main {
   width: 90vw;
+  max-width: 1200px;
   margin: 3rem auto;
-  min-height: 100vh;
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  grid-template-columns: 1fr;
 }
 
 #article, .article-5, .article-4, .article-3, .article-2, .article-1 {
@@ -69,6 +72,7 @@ main {
   display: grid;
   gap: 1.5rem;
   color: white;
+  box-shadow: 5px 10px 2rem rgba(0, 0, 0, 0.113);
 }
 #article .user, .article-5 .user, .article-4 .user, .article-3 .user, .article-2 .user, .article-1 .user {
   display: flex;
@@ -126,6 +130,9 @@ main {
 }
 
 @media (min-width: 748px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
   .article-1 {
     grid-row: 1/span 2;
   }
@@ -144,5 +151,26 @@ main {
   .article-5 {
     grid-column: 2;
     grid-row: 3/span 2;
+  }
+}
+@media (min-width: 1024px) {
+  main {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "a a b e" "c d d e";
+  }
+  .article-1 {
+    grid-area: a;
+  }
+  .article-2 {
+    grid-area: b;
+  }
+  .article-3 {
+    grid-area: c;
+  }
+  .article-4 {
+    grid-area: d;
+  }
+  .article-5 {
+    grid-area: e;
   }
 }
