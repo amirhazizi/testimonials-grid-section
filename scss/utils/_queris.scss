@@ -1,0 +1,50 @@
+// media queries
+@media (min-width: 748px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+  .article-1 {
+    grid-row: 1 / span 2;
+  }
+  .article-2 {
+    grid-column: 2;
+    grid-row: 1/2;
+  }
+  .article-3 {
+    grid-column: 2;
+    grid-row: 2/3;
+  }
+  .article-4 {
+    grid-column: 1;
+    grid-row: 3/4;
+  }
+  .article-5 {
+    grid-column: 2;
+    grid-row: 3 / span 2;
+  }
+}
+@media (min-width: 1024px) {
+  main {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "a a b e"
+      "c d d e";
+  }
+  .article-1 {
+    grid-area: a;
+    background-size: 20%;
+    background-position: top right 20%;
+  }
+  .article-2 {
+    grid-area: b;
+  }
+  .article-3 {
+    grid-area: c;
+  }
+  .article-4 {
+    grid-area: d;
+  }
+  .article-5 {
+    grid-area: e;
+  }
+}
