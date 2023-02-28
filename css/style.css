@@ -32,9 +32,9 @@ footer {
   bottom: 0%;
   left: 50%;
   transform: translate(-50%, 0);
-  background: hsl(263, 55%, 52%);
+  background: hsl(219, 29%, 14%);
   color: hsl(210, 46%, 95%);
-  padding: 0.2rem 0.3rem;
+  padding: 0.2rem 0.5rem;
   font-size: 11px;
   text-align: center;
   border-radius: 10px 10px 0 0;
@@ -44,7 +44,81 @@ footer {
   font-weight: bold;
   color: hsl(0, 0%, 100%);
   transition: all 250ms linear;
+  padding: 0 0.2rem;
 }
 .attribution a:hover {
   color: #cccccc;
+}
+
+body {
+  background-color: hsl(210, 46%, 95%);
+}
+
+main {
+  width: 90vw;
+  margin: 3rem auto;
+  display: grid;
+  gap: 1.5rem;
+}
+
+#article, .article-5, .article-4, .article-3, .article-2, .article-1 {
+  padding: 2rem 2.75rem;
+  border-radius: 10px;
+  display: grid;
+  gap: 1.5rem;
+  color: white;
+}
+#article .user, .article-5 .user, .article-4 .user, .article-3 .user, .article-2 .user, .article-1 .user {
+  display: flex;
+  align-items: center;
+  gap: 0 1.5rem;
+}
+#article .user-avatar, .article-5 .user-avatar, .article-4 .user-avatar, .article-3 .user-avatar, .article-2 .user-avatar, .article-1 .user-avatar {
+  border-radius: 75px;
+  border: 1px solid rgba(255, 255, 255, 0.401);
+  height: 2.5rem;
+}
+#article .user-info, .article-5 .user-info, .article-4 .user-info, .article-3 .user-info, .article-2 .user-info, .article-1 .user-info {
+  display: grid;
+  gap: 0.2rem 0;
+}
+#article .user-info h2, .article-5 .user-info h2, .article-4 .user-info h2, .article-3 .user-info h2, .article-2 .user-info h2, .article-1 .user-info h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  opacity: 0.9;
+}
+#article .user-info p, .article-5 .user-info p, .article-4 .user-info p, .article-3 .user-info p, .article-2 .user-info p, .article-1 .user-info p {
+  font-size: 0.95rem;
+  opacity: 0.5;
+}
+#article h1, .article-5 h1, .article-4 h1, .article-3 h1, .article-2 h1, .article-1 h1 {
+  font-size: 1.575rem;
+  opacity: 0.9;
+}
+#article p, .article-5 p, .article-4 p, .article-3 p, .article-2 p, .article-1 p {
+  font-size: 1.05rem;
+  opacity: 0.7;
+  line-height: 1.5;
+}
+
+.article-1 {
+  background: hsl(263, 55%, 52%);
+}
+
+.article-2 {
+  background: hsl(217, 19%, 35%);
+}
+
+.article-3 {
+  background: hsl(0, 0%, 100%);
+  color: hsl(219, 29%, 14%);
+}
+
+.article-4 {
+  background: hsl(219, 29%, 14%);
+}
+
+.article-5 {
+  background: hsl(0, 0%, 100%);
+  color: hsl(219, 29%, 14%);
 }

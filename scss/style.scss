@@ -1,5 +1,74 @@
 // import config
 @import "./utils/config";
-
 // import footer
 @import "./components/footer";
+body {
+  background-color: $cl-Lightgrayishblue;
+}
+main {
+  width: 90vw;
+  margin: 3rem auto;
+  display: grid;
+  gap: 1.5rem;
+}
+#article {
+  padding: 2rem 2.75rem;
+  border-radius: $radius-2;
+  display: grid;
+  gap: 1.5rem;
+  color: white;
+  .user {
+    display: flex;
+    align-items: center;
+    gap: 0 1.5rem;
+    &-avatar {
+      border-radius: $radius-4;
+      border: 1px solid rgba(255, 255, 255, 0.401);
+      height: 2.5rem;
+    }
+    &-info {
+      display: grid;
+      gap: 0.2rem 0;
+      h2 {
+        font-size: 1.1rem;
+        font-weight: 500;
+        opacity: 0.9;
+      }
+      p {
+        font-size: 0.95rem;
+        opacity: 0.5;
+      }
+    }
+  }
+  h1 {
+    font-size: 1.575rem;
+    opacity: 0.9;
+  }
+  p {
+    font-size: 1.05rem;
+    opacity: 0.7;
+    line-height: 1.5;
+  }
+}
+.article-1 {
+  @extend #article;
+  background: $cl-Moderateviolet;
+}
+.article-2 {
+  @extend #article;
+  background: $cl-Verydarkgrayishblue;
+}
+.article-3 {
+  @extend #article;
+  background: $cl-White;
+  color: $cl-Verydarkblackishblue;
+}
+.article-4 {
+  @extend #article;
+  background: $cl-Verydarkblackishblue;
+}
+.article-5 {
+  @extend #article;
+  background: $cl-White;
+  color: $cl-Verydarkblackishblue;
+}
