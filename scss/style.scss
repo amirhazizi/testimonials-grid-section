@@ -8,8 +8,10 @@ body {
 main {
   width: 90vw;
   margin: 3rem auto;
+  min-height: 100vh;
   display: grid;
   gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
 }
 #article {
   padding: 2rem 2.75rem;
@@ -71,4 +73,38 @@ main {
   @extend #article;
   background: $cl-White;
   color: $cl-Verydarkblackishblue;
+}
+@media (min-width: 748px) {
+  main {
+    // grid-template-areas:
+    //   "a b"
+    //   "a c"
+    //   "d e"
+    //   "d e"
+    //   "f e";
+  }
+  .article-1 {
+    grid-row: 1 / span 2;
+    // grid-area: a;
+  }
+  .article-2 {
+    grid-column: 2;
+    grid-row: 1/2;
+    //   grid-area: b;
+  }
+  .article-3 {
+    grid-column: 2;
+    grid-row: 2/3;
+    //   grid-area: d;
+  }
+  .article-4 {
+    grid-column: 1;
+    grid-row: 3/4;
+    //   grid-area: c;
+  }
+  .article-5 {
+    grid-column: 2;
+    grid-row: 3 / span 2;
+    //   grid-area: e;
+  }
 }
